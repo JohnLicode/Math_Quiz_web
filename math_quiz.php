@@ -110,16 +110,16 @@ if (isset($_GET['game_over'])) {
             <select name="level" id="level" required>
                 <option value="1">Level 1 (1-10)</option>
                 <option value="2">Level 2 (1-100)</option>
-                <option value="custom">Custom Range</option>
+                <option value="custom">Custom Level</option>
             </select>
 
             <div id="custom-range-container" style="display: none;">
                 <div>
-                    <label for="custom_min">Custom Min:</label>
+                    <label for="custom_min">Min:</label>
                     <input type="number" name="custom_min" id="custom_min" placeholder="Enter min value">
                 </div>
                 <div>
-                    <label for="custom_max">Custom Max:</label>
+                    <label for="custom_max">Max:</label>
                     <input type="number" name="custom_max" id="custom_max" placeholder="Enter max value">
                 </div>
             </div>
