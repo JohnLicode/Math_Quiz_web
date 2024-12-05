@@ -44,7 +44,7 @@ select, input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    box-sizing: border-box; 
 }
 
 .choice-container {
@@ -118,16 +118,15 @@ a:hover {
     color: #fff;
 }
 
-/* Custom Range Inputs Adjustments */
 #custom-range-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between the custom min and max inputs */
+    gap: 15px; 
     margin-top: 10px;
 }
 
 #custom-range-container input[type="number"] {
-    width: calc(50% - 10px); /* Make custom min and max inputs take up half the width each */
+    width: calc(50% - 10px); 
     margin-right: 10px;
 }
 
@@ -137,7 +136,7 @@ a:hover {
     align-items: center;
 }
 
-/* Ensure the custom range container only appears when selected */
+
 #custom-range-container {
     display: none;
 }
@@ -146,8 +145,8 @@ a:hover {
     display: block;
 }
 
-/* Number of Questions Input */
+
 #num_questions {
     margin-top: 10px;
-    width: 100%; /* Make sure it spans the full width */
+    width: 100%; 
 }
