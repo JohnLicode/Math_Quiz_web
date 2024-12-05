@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+select, input[type="number"] {
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+.choice-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #2b6cb0;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #234e80;
+}
+
+.remark {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #2b6cb0;
+}
+
+.game-over a {
+    margin-top: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2b6cb0;
+    border: 1px solid #2b6cb0;
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.game-over a:hover {
+    background-color: #2b6cb0;
+    color: #fff;
+}
+
+/* Custom Range Inputs Adjustments */
+#custom-range-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between the custom min and max inputs */
+    margin-top: 10px;
+}
+
+#custom-range-container input[type="number"] {
+    width: calc(50% - 10px); /* Make custom min and max inputs take up half the width each */
+    margin-right: 10px;
+}
+
+#custom-range-container div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Ensure the custom range container only appears when selected */
+#custom-range-container {
+    display: none;
+}
+
+#custom-range-container.active {
+    display: block;
+}
+
+/* Number of Questions Input */
+#num_questions {
+    margin-top: 10px;
+    width: 100%; /* Make sure it spans the full width */
+}
